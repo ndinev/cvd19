@@ -1,0 +1,32 @@
+<html>
+<body>
+     Sample COVID Chatbot
+     <script src="https://web-chat.nativechat.com/2.6.0/sdk/nativechat.js"></script>
+    <link href="https://web-chat.nativechat.com/2.6.0/sdk/nativechat.css" rel="stylesheet" type="text/css">
+    <script>
+  var chatSettings = {
+    bot: {
+      id: "bfe18d794fb94ce087787026"
+    },
+    channel: {
+      id: "b50b0ce3-9e40-422d-b7c5-2acbd846b318",
+      token: "11cb4f60-9446-459d-9fc0-2bb10cab83c0"
+    },
+    googleApiKey: "your-google-maps-API-key",
+    session: {
+      clear: true
+    }
+  };
+
+  window.NativeChat.load({
+    id: "kcChatWindow",
+    origin: "",
+    display: {
+        mode: "modal"
+    },
+    chat: chatSettings
+  });
+</script>
+
+</body>
+</html>
